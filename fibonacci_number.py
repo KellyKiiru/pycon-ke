@@ -8,7 +8,7 @@ Example is (0,1,1,2,3,5,8,13,21,34...)
 from unicodedata import digit
 
 
-def find_if_fibonacci():
+def print_fibonacci():
 
     num = int(input("Hi there. Kindly input the number you want to check...\n\n"))
 
@@ -23,7 +23,15 @@ def find_if_fibonacci():
             digit1 = digit2
             digit2 = summation
             summation = digit1 + digit2
+            
+            print(summation, end=", ")
+            
+        if num != summation:
+            print(f"{num} is not a fibonnaci nummber")
+            
+        else:
+            print(f"{num} is a fibonacci number")
+            
+            
+print_fibonacci()
 
-            print(summation, end=" ")
-
-find_if_fibonacci()
