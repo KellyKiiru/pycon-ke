@@ -5,16 +5,10 @@ Example is (0,1,1,2,3,5,8,13,21,34...)
 
 '''
 
-from itertools import count
 from unicodedata import digit
-from unittest import result
-from math import sqrt
 
 
 def print_fibonacci():
-    
-    '''
-    This will display the fibonacci series upto the number input.'''
 
     num = int(input("Hi there. Kindly input the number you want to check...\n\n"))
 
@@ -32,33 +26,12 @@ def print_fibonacci():
             
             print(summation, end=", ")
             
-        '''
-        A number is a fibonacci number if and only if it satisfies the following formula:
-        5(n**2)+4 or 5(n**2)-4 is a perfect square'''
-        
-        #logic to check if num will give a perfect square
-        result1 = 5*num*num+4
-        result2 = 5*num*num-4
-        
-        
-        #get the squareroot of the result
-        
-        sqrs1 = sqrt(int(result1))
-        sqrs2 = sqrt(int(result2))
-        
-        #multiply the squareroot to compare it with relevant result
-        
-        if sqrs1**2 == result1 or sqrs2**2 == result2:
-            print(f"{num} is a fibo number")
-            print('hello world')
+        if num != summation:
+            print(f"{num} is not a fibonnaci nummber")
+            
         else:
-            print(f"{num} is not in the fibonacci series")
-            #print(sqrs1)
-            #print(sqrs2)
-            #print(result2)
-            #print(result1)
-    
+            print(f"{num} is a fibonacci number")
+            
             
 print_fibonacci()
-
 
