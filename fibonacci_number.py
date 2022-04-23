@@ -21,7 +21,7 @@ def print_fibonacci():
     summation = digit1 + digit2
     
     def fibo_series():
-        print("As you can see in the series above...")
+        print("As you can see in the series above...\n")
         
     if num <= 0:
         print("Error: kindly input a value that is greater than 0")
@@ -51,10 +51,10 @@ def print_fibonacci():
         if sqrs1*sqrs1 == result1 or sqrs2*sqrs2 == result2:
             print('\n')
             fibo_series()
-            print(f"{num} is in the fibonacci sequence")
+            print(num,"is in the fibonacci sequence")
         else:
             print('\n')
             fibo_series()
-            print(f"{num} is not in the fibonacci series")
+            print(num,"is not in the fibonacci series")
 
 print_fibonacci()
